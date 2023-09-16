@@ -33,5 +33,5 @@ def largest_prime_factor(n):
     print(prime_factors_df)
 
 # Call the function with the number 600851475143
-largest_prime_factor(13195)
+largest_prime_factor(600851475143)
 
