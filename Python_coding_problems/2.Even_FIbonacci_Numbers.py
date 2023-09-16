@@ -7,20 +7,22 @@
 # terms.
 
 
+def sum_of_even_fibonacci_numbers():
+    # Initialize the first two terms of the Fibonacci sequence
+    a,b = 1,2
 
-# Initialize the first two terms of the Fibonacci sequence
-a,b = 1,2
+    # Initialize the sum of even-valued terms
+    even_sum = 0
 
-# Initialize the sum of even-valued terms
-even_sum = 0
+    while a<=4000000:
+        # check if the current term (a) is even
+        if a % 2 == 0:
+            even_sum += a
 
-while a<=4000000:
-    #check if the current term (a) is even
-    if a % 2 == 0:
-        even_sum += a
+        # Generate the next term in the sequence
+        a, b = b, a+b
+        print(a,b)
+    print(even_sum)
 
-    #Generate the next term in the sequence
-    a, b = b, a+b
-    print(a,b)
-
-print(even_sum)
+# Call the function
+sum_of_even_fibonacci_numbers()
